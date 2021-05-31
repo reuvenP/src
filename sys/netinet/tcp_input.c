@@ -3832,8 +3832,8 @@ syn_cache_add(struct sockaddr *src, struct sockaddr *dst, struct tcphdr *th,
 		 * leading to serious problems when traversing these
 		 * broken firewalls.
 		 *
-		 * With the default sbmax of 256K, a scale factor
-		 * of 3 will be chosen by this algorithm.  Those who
+		 * With the default sbmax of 2MB, a scale factor
+		 * of 6 will be chosen by this algorithm.  Those who
 		 * choose a larger sbmax should watch out
 		 * for the compatibility problems mentioned above.
 		 *
